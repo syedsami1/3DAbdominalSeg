@@ -1,0 +1,17 @@
+# Configuration file for training and evaluation
+
+model:
+  architecture: VNet
+
+training:
+  batch_size: 4
+  learning_rate: 0.0001
+  epochs: 50
+  data_augmentation: True
+
+paths:
+  train_data: data/train/
+  validation_data: data/validation/
+  test_data: data/test/
+  model_save_path: models/vnet.pth
+  visualization_output: output/
