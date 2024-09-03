@@ -7,7 +7,7 @@ This repository contains code and documentation for a 3D segmentation model desi
 ## Dataset
 
 The dataset for this task can be downloaded from the following link:
-[CT Abdomen Organ Segmentation Dataset](#)
+https://zenodo.org/records/7860267
 
 The dataset includes labeled CT scans. Focus on the following organs:
 - Liver
@@ -39,8 +39,8 @@ Refer to the dataset documentation for class IDs corresponding to these organs.
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/3D-Segmentation-CT-Abdomen.git
-   cd 3D-Segmentation-CT-Abdomen
+   git clone https://github.com/syedsami1/3DAbdominalSeg.git
+   cd 3DAbdominalSeg
    ```
 
 2. **Install Dependencies:**
@@ -55,13 +55,13 @@ Refer to the dataset documentation for class IDs corresponding to these organs.
      ```
    - To evaluate the model:
      ```bash
-     python evaluate.py --model_path path/to/model --data_path path/to/test_data
+     python evaluate.py 
      ```
 
 4. **Generate 3D Visualizations:**
    - To create a 3D visualization of the predicted segments:
      ```bash
-     python visualize.py --model_path path/to/model --data_path path/to/test_data --output_path path/to/output
+     python visualize.py 
      ```
 
 ## Model Architecture
@@ -86,13 +86,5 @@ Refer to the dataset documentation for class IDs corresponding to these organs.
 - **Validation Metric:** Dice Score
 - **Performance:** Dice Scores for each organ are provided in the evaluation results.
 
-## 3D Visualization
 
-A video demonstrating the 3D rendered segments of the predicted organs can be viewed [here](#). This visualization showcases the segmented Liver, Right Kidney, Left Kidney, and Spleen.
-
-## Final Steps
-
-- Ensure the GitHub repository link is accessible.
-- The README file includes all necessary sections.
-- The 3D visualization video is included in the README.
 
